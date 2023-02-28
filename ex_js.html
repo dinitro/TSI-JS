@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mind Blowing HTML Code Example</title>
+	<link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+	<header>
+		<h1>The Benefits of Learning HTML</h1>
+		<nav>
+			<ul>
+				<li><a href="#section1">Section 1</a></li>
+				<li><a href="#section2">Section 2</a></li>
+				<li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+				<li><a href="#chatbot">Chatbot</a></li>
+				<li><a href="#snake">Snake Game</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="section1">
+			<h2>What is HTML?</h2>
+			<p>HTML is a markup language used to create and structure content on the web.</p>
+			<p>Learning HTML can help you create your own websites and moreover impress Lukas and Ash who doesn't like people automatically generating HTML code.</p>
+			<form>
+				<fieldset>
+					<legend>Do you have experience with HTML?</legend>
+					<label><input type="radio" name="html_experience" value="yes">Yes</label>
+					<label><input type="radio" name="html_experience" value="no">No</label>
+				</fieldset>
+				<fieldset>
+					<legend>Leave a comment:</legend>
+					<textarea name="comment" rows="4" cols="50"></textarea>
+				</fieldset>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+        <br></br>
+		<section id="section2">
+			<h2>Why Learn HTML?</h2>
+			<p>HTML is the foundation of the web but has been <strong> stuck on version 5 for a <em> decade and a half</em></strong>. Stop now and wait for the new version to come out in order to become a more versatile and skilled web developer.</p>
+			<p>Also, your website would fit right in with many other Japanese Websites ¯\_(ツ)_/¯</p>
+            <!-- Emojis -->
+			<div class="table-emoji-container">
+				<div class="table-emoji" id="em1">(╯°□°）╯︵ ┻━┻</div>
+				<div class="table-emoji" id="em2">┬──┬ ノ( ゜-゜ノ)</div>
+				<div class="table-emoji" id="em3">┻━┻ ︵ ¯\(ツ)/¯ ︵ ┻━┻</div>
+			</div>
+			<br></br>
+			<form>
+				<fieldset>
+					<legend>What motivates you to learn HTML?</legend>
+					<label><input type="checkbox" name="motivation" value="bored">Bored</label><br/>
+					<label><input type="checkbox" name="motivation" value="time">Need to impress the trainers</label><br/>
+					<label><input type="checkbox" name="motivation" value="other">Am being forced, halp!</label><br/>
+                    <label><input type="checkbox" name="motivation" value="other">Other</label><br/>
+				</fieldset>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+        <br></br>
+		<section id="section3">
+			<h2>How to Get Started?</h2>
+			<p>The best way to learn HTML is to start building your own web pages. There are supposedly lots of resources and tutorials available to help you get started.</p>
+			<p>Some lesser know resources that might help with the learning process:</p>
+			<ul>
+				<li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">MDN Web Docs</a></li>
+				<li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy</a></li>
+			</ul>
+            <p>For the most common ones just ask Google, Bing, DuckDuckGo or or whichever you fancy.</p>
+			<form>
+				<fieldset>
+					<legend>Which resource do you prefer?</legend>
+					<select name="resource_preference">
+						<option value="w3schools">W3Schools</option>
+						<option value="mdn">MDN Web Docs</option>
+						<option value="codecademy">Codecad</option>
+                        <option value="other">I do my own research</option>
+                    </select>
+                </fieldset>
+            </form>
+        </section>
+        <br><br>
+        <section id="section4">
+            <h2>Good Luck with the Learning Process!</h2>
+            <img src="https://media.npr.org/assets/img/2023/01/14/this-is-fine_custom-dcb93e90c4e1548ffb16978a5a8d182270c872a9-s800-c85.webp" alt="This is Fine">
+        </section>
+		<!-- Chatbot -->
+		<section id="chatbot">
+			<h2>Chatbot</h2>
+			<div>
+			  <label for="chatbot-input">Ask me almost anything:</label>
+			  <input type="text" id="chatbot-input" name="chatbot-input">
+			  <button id="chatbot-submit">Send</button>
+			</div>
+			<p id="chatbot-response"></p>
+		</section>
+		<!-- Snake Game -->
+		<section id="snake">
+			<h2>Snake Game!</h2>
+			<canvas id="snakeboard" width="400" height="400"></canvas>
+			<button id="start-game" onclick="play()">Play!</button>
+			<p>Press button to start or restart the game.</p>
+		</section>
+		<!-- Go to top button -->
+		<button id="go-to-top-btn"> Go to top ↑</button>
+		<!-- Mode switcher button -->
+		<button id="toggle-color" onclick="toggleColors()">Dark Mode</button>
+		
+		<!-- JS Scripting -->
+		<!-- Trying to script within HTML -->
+		<script>
+			// Go to top.
+			// Get buton.
+			const goToTopBtn = document.getElementById("go-to-top-btn");
+			
+			// Button behaviour, hide if near the top otherwise show the button.
+			window.onscroll = function() {
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					goToTopBtn.style.display = "block";
+				} else {
+					goToTopBtn.style.display = "none";
+				}
+			};
+			
+			// Event listener to know when the button is pressed.
+			goToTopBtn.addEventListener("click", function() {
+				document.body.scrollTop = 0; // For Safari
+				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			});
+		</script>
+		
+		<!-- Emoji switcher -->
+		<script>
+		// Get container element.
+			const container = document.querySelector('.table-emoji-container');
+
+			// Get emojis inside the container.
+			const emojis = container.querySelectorAll('.table-emoji');
+
+			// Initialize counter.
+			let counter = 0;
+
+			// Add event listener to container element.
+			container.addEventListener('click', function() {
+			// Hide current emoji.
+			emojis[counter].style.display = 'none';
+			
+			// Increment counter and wrap around.
+			counter = (counter + 1) % emojis.length;
+			
+			// Show next emoji.
+			emojis[counter].style.display = 'block';
+			});
+		</script>
+		
+		<!-- Importing Scripts -->
+		<!-- Chatbot -->
+		<script src="chatbot.js"></script>
+		<!-- Light/Dark mode switcher -->
+		<script src="toggle_colors.js"></script>
+		<!-- Snake Game -->
+		<script src="snake.js"></script>
+	</main>
+</body>

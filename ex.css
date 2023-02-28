@@ -1,0 +1,86 @@
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the h1 in the header */
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Style the nav in the header */
+  header nav {
+    margin-top: 10px;
+  }
+  
+  /* Style the links in the nav */
+  header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Style the active link in the nav */
+  header nav a:hover, header nav a.active {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Style the main section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Style the sections */
+  section {
+    margin-bottom: 50px;
+  }
+  
+  /* Style the h2 in the sections */
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Style the form elements */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the legend in the forms */
+  legend {
+    font-weight: bold;
+  }
+  
+  /* Style the input and select elements in the forms */
+  input[type="text"], textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the submit button in the forms */
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the images in the sections */
+  section img {
+    max-width: 100%;
+    height: auto;
+  }

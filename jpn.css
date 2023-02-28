@@ -1,0 +1,116 @@
+/* Set the background color to off-white */
+body {
+    background-color: #F2F2F2;
+  }
+  
+  /* Set the font to a traditional Japanese font */
+  body, h1, h2, h3, p, a, label, legend, select, input, textarea {
+    font-family: "Hiragino Mincho Pro", sans-serif;
+  }
+  
+  /* Set the text color to dark gray */
+  body, p, a, label, legend {
+    color: #333333;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Add a border around the main content area */
+  main {
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: 10px auto;
+    max-width: 800px;
+  }
+  
+  /* Add decorative elements to section headers */
+  section {
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  section::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #C72525;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  section::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #C72525;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #C72525;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #C72525;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #9B1C1C;
+  }
+  
+  /* Style the go-to-top button */
+  #go-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #C72525;
+    color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #go-to-top-btn:hover {
+    background-color: #9B1C1C;
+  }

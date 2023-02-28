@@ -1,0 +1,24 @@
+<div class="text-container">
+				<div class="text" id="text1">(╯°□°）╯︵ ┻━┻</div>
+				<div class="text" id="text2">┬──┬ ノ( ゜-゜ノ)</div>
+				<div class="text" id="text3">┻━┻ ︵ ¯\(ツ)/¯ ︵ ┻━┻</div>
+			  </div>
+			  
+			  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			  <script>
+				$(document).ready(function() {
+				  var currentText = 1;
+				  
+				  $('.text').click(function() {
+					$(this).hide();
+					currentText = currentText % 3 + 1;
+					$('#text' + currentText).show();
+				  });
+				});
+			  </script>
+
+<style>
+  .text-container .text:not(:first-child) {
+    display: none;
+  }
+</style>
